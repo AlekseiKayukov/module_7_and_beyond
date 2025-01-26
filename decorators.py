@@ -1,4 +1,4 @@
-def is_prime_decorator(func):
+def is_prime(func):
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
 
@@ -15,7 +15,7 @@ def is_prime_decorator(func):
 
     return wrapper
 
-@is_prime_decorator
+@is_prime
 def sum_three(one, two, three):
     return one + two + three
 
